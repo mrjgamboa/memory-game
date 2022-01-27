@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Amatic SC Bold";
+  src: 
+    local("Amatic SC Bold"),
+    url(../fonts/amatic-sc/AmaticSC-Bold.ttf)
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Amatic SC Regular";
+  src: 
+    local("Amatic SC Regular"),
+    url(../fonts/amatic-sc/AmaticSC-Regular.ttf)
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Josefin Sans Bold";
+  src: 
+    local("Josefin Sans Bold"),
+    url(../fonts/josefin-sans/static/JosefinSans-Bold.ttf)
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Josefin Sans Regular";
+  src: 
+    local("Josefin Sans Regular"),
+    url(../fonts/josefin-sans/static/JosefinSans-Regular.ttf)
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Josefin Sans Italic";
+  src: 
+    local("Josefin Sans Italic"),
+    url(../fonts/josefin-sans/static/JosefinSans-Italic.ttf)
+      format("truetype");
+}

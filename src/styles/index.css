@@ -1,0 +1,54 @@
+@import "fonts.css";
+
+:root {
+  --color-primary: hsl(197, 71%, 73%);
+  --color-secondary: hsl(0, 0%, 100%);
+  --color-tertiary: hsl(17, 71%, 73%);
+  --radius-small: 2px;
+  --radius-medium: 5px;
+  --radius-large: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin:0!important;
+  padding:0!important;
+}
+
+html,
+body,
+#root,
+.App {
+  height: 100vh;
+}
+
+body {
+  font-family: "Josefin Sans Regular", sans-serif;
+}
+
+body strong {
+  font-family: "Josefin Sans Bold", sans-serif;
+}
+
+body i,
+body em {
+  font-family: "Josefin Sans Italic", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Amatic SC Regular', cursive;
+}
+
+h1.bold,
+h2.bold,
+h3.bold,
+h4.bold,
+h5.bold {
+  font-family: 'Amatic SC Bold', cursive;
+}
