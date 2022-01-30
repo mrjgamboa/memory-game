@@ -1,7 +1,7 @@
 import './styles/App.css';
-import Header from './components/Header';
-import Wrapper from './components/Wrapper';
-import Footer from './components/Footer';
+import Header from './components/Header/Header';
+import Wrapper from './components/Wrapper/Wrapper';
+import Footer from './components/Footer/Footer';
 import sns from './social-networking-services.json';
 
 export default function App() {
