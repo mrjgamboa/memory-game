@@ -1,3 +1,4 @@
+@import "css-reset.css";
 @import "fonts.css";
 
 :root {
@@ -7,21 +8,6 @@
   --radius-small: 2px;
   --radius-medium: 5px;
   --radius-large: 10px;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin:0;
-  padding:0;
-}
-
-html,
-body,
-#root,
-.App {
-  height: 100vh;
 }
 
 body {
@@ -53,9 +39,4 @@ h3,
 h4,
 h5 {
   font-family: 'Amatic SC Regular', cursive;
-}
-
-a,
-button {
-  cursor: pointer;
 }

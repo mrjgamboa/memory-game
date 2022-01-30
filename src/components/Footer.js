@@ -4,6 +4,7 @@ const styles = {
     color: 'inherit',
     padding: '1rem 1.5rem',
     textAlign: 'right',
+    width: '100%',
   },
   p: {
     fontSize: '1.3em',

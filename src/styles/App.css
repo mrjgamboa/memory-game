@@ -1,11 +1,8 @@
 .App {
   background-color: var(--color-primary);
   color: var(--color-secondary);
-  display: flex;
-  flex-direction: column;
-  overflow: auto;
 }
 
-main {
+.container {
   flex: 1;
 }

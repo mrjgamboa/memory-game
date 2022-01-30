@@ -1,8 +1,9 @@
 const styles = {
-  Header: {
+  header: {
     backgroundColor: 'inherit',
     color: 'inherit',
     padding: '1rem 1.5rem',
+    width: '100%',
   },
   h1: { 
     margin: 0,
@@ -12,7 +13,7 @@ const styles = {
 
 export default function Header({title}) {
   return (
-    <header style={styles.Header}>
+    <header style={styles.header}>
       <h1 style={styles.h1}>{title}</h1>
     </header>
   );
