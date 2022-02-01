@@ -9,14 +9,14 @@ export default function App() {
   return (
     <div className='App'>
       <Wrapper>
-        <Header title='SNS Memory Game'/>
+        {/* <Header title='Memory Game'/> */}
         <main className='container'>
           <MemoryGame data={sns} />
         </main>
-        <Footer
+        {/* <Footer
           builder='L4ck (mrjgamboa)'
           link='https://github.com/mrjgamboa'
-        />
+        /> */}
       </Wrapper>
     </div>
   );
