@@ -41,3 +41,7 @@ h4,
 h5 {
   font-family: 'Amatic SC Regular', cursive;
 }
+
+img, video {
+  max-width: 100%;
+}

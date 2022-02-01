@@ -3,12 +3,12 @@ import Wrapper from './components/Wrapper/Wrapper';
 import Header from './components/Header/Header';
 import MemoryGame from './components/MemoryGame/MemoryGame';
 import Footer from './components/Footer/Footer';
-import sns from './social-networking-services.json';
+import { sns } from './data/social-network-services';
 
 export default function App() {
   return (
     <div className='App'>
-      <Wrapper>
+      <Wrapper column={true}>
         {/* <Header title='Memory Game'/> */}
         <main className='container'>
           <MemoryGame data={sns} />

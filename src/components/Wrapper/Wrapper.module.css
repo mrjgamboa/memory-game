@@ -1,8 +1,12 @@
 .wrapper {
   height: 100%;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-content: flex-start;
   overflow: auto;
+}
+
+.wrapper.column {
+  flex-flow: column wrap;
 }

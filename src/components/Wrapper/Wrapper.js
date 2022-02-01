@@ -1,7 +1,15 @@
 import styles from './Wrapper.module.css';
 
-export default function Wrapper({children}) {
+export default function Wrapper({column, children}) {
   return (
-    <div className={styles.wrapper}>{children}</div>
+    <div
+      className={
+        (column === true)
+          ? `${styles.wrapper} ${styles.column}`
+          : styles.wrapper
+      }
+    >
+      {children}
+    </div>
   );
 };
