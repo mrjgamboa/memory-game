@@ -1,11 +1,14 @@
 .nav {
-  font-size: 1.5em;
-  color: var(--color-tertiary)
+  color: var(--color-tertiary);
+  font-size: 2em;
+  padding: 1rem 1.5rem;
+  width: 100%;
 }
 
 .para {
   max-width: 110px;
   width: 100%;
+  text-shadow: 1px 1px var(--color-secondary);
 }
 
 .span {

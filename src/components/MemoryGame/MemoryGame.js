@@ -5,16 +5,15 @@ import Card from '../Card/Card';
 
 export default function MemoryGame({data}) {
   return (
-    <div className={styles.div}>
+    <div className={styles.gameDiv}>
       <Scoreboard />
-      <div className={styles.cardContainer}>
-        <Wrapper column={false}>
-          <Card obj={data[25]}/>
-          <Card obj={data[10]}/>
-          <Card obj={data[2]}/>
-          <Card obj={data[3]}/>
-        </Wrapper>
-      </div>
+      <Wrapper column={false}>
+        <Card obj={data[25]}/>
+        <Card obj={data[10]}/>
+        <Card obj={data[2]}/>
+        <Card obj={data[3]}/>
+        <Card obj={data[4]}/>
+      </Wrapper>
     </div>
   );
 };

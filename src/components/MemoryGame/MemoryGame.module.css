@@ -1,9 +1,5 @@
-.div {
+.gameDiv {
   display: flex;
-  flex: 1;
-  flex-direction: column;
-}
-
-.cardContainer {
   height: 100%;
+  flex-direction: column;
 }

@@ -1,10 +1,7 @@
 .App {
   background-color: var(--color-primary);
   color: var(--color-secondary);
-}
-
-.container {
-  flex: 1;
-  max-width: 100%;
-  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
 }
