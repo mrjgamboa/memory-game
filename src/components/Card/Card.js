@@ -5,7 +5,7 @@ export default function Card({obj}) {
 
   return (
     <div className={styles.card}>
-      <div className={styles.imgContainer}>
+      <div>
         <img 
           src={src} 
           alt={alt}
