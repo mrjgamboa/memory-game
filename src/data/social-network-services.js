@@ -27,63 +27,63 @@ import youtube from '../img/socials/youtube.svg';
 
 export const sns = [
   {
-    "id": "sns01",
+    "id": "sns1",
     "name": "Discord",
     "src": discord,
     "alt": "Discord logo",
     "clicked": false
   },
   {
-    "id": "sns02",
+    "id": "sns2",
     "name": "Facebook",
     "src": facebook,
     "alt": "Facebook logo",
     "clicked": false
   },
   {
-    "id": "sns03",
+    "id": "sns3",
     "name": "Facebook Messenger",
     "src": facebookMessenger,
     "alt": "Facebook Messenger logo",
     "clicked": false
   },
   {
-    "id": "sns04",
+    "id": "sns4",
     "name": "Flickr",
     "src": flickr,
     "alt": "Flickr logo",
     "clicked": false
   },
   {
-    "id": "sns05",
+    "id": "sns5",
     "name": "Instagram",
     "src": instagram,
     "alt": "Instagram logo",
     "clicked": false
   },
   {
-    "id": "sns06",
+    "id": "sns6",
     "name": "Line",
     "src": line,
     "alt": "Line logo",
     "clicked": false
   },
   {
-    "id": "sns07",
+    "id": "sns7",
     "name": "LinkedIn",
     "src": linkedin,
     "alt": "LinkedIn logo",
     "clicked": false
   },
   {
-    "id": "sns08",
+    "id": "sns8",
     "name": "Pinterest",
     "src": pinterest,
     "alt": "Pinterest logo",
     "clicked": false
   },
   {
-    "id": "sns09",
+    "id": "sns9",
     "name": "QQ",
     "src": qq,
     "alt": "QQ logo",
@@ -207,5 +207,5 @@ export const sns = [
     "src": youtube,
     "alt": "Youtube logo",
     "clicked": false
-  }
+  },
 ];
