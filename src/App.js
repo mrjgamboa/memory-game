@@ -1,21 +1,58 @@
+import { useState } from 'react';
+import { sns } from './data/social-networking-services';
+import { animals } from './data/animals';
 import './styles/App.css';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
+import ThemeSelector from './components/ThemeSelector/ThemeSelector';
 import MemoryGame from './components/MemoryGame/MemoryGame';
 import Footer from './components/Footer/Footer';
-import { sns } from './data/social-network-services';
+
+function randomInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};
 
 export default function App() {
+  const [theme, setTheme] = useState(false);
+  const themeInfo = [
+    {
+      id: 1,
+      name: 'Social Networking Services (SNS)',
+      count: sns.length,
+      img: sns[randomInteger(0, sns.length-1)].src,
+    },
+    {
+      id: 2,
+      name: 'Animals',
+      count: animals.length,
+      img: animals[randomInteger(0, animals.length-1)].src,
+    },
+  ];
+
+  const themeDataSetter = (id) => {
+    if (id === 1) {
+      setTheme(sns);
+    } else if (id === 2){
+      setTheme(animals);
+    }
+  };
+  
   return (
     <div className='App'>
-      {/* <Header title='Memory Game'/> */}
+      <Header title='Memory Game'/>
       <Main>
-        <MemoryGame data={sns} />
+        {(theme === false)
+          ? <ThemeSelector 
+              data={themeInfo} 
+              onChildClick={themeDataSetter}
+            />
+          : <MemoryGame data={theme} />
+        }
       </Main>
-      {/* <Footer
+      <Footer
         builder='L4ck (mrjgamboa)'
         link='https://github.com/mrjgamboa'
-      /> */}
+      />
     </div>
   );
 };
