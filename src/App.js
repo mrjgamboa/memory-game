@@ -14,6 +14,7 @@ function randomInteger(min, max) {
 
 export default function App() {
   const [theme, setTheme] = useState(false);
+  
   const themeInfo = [
     {
       id: 1,
@@ -39,7 +40,9 @@ export default function App() {
   
   return (
     <div className='App'>
-      <Header title='Memory Game'/>
+      {(theme === false) &&
+        <Header title='Memory Game'/>
+      }
       <Main>
         {(theme === false)
           ? <ThemeSelector 
@@ -49,10 +52,12 @@ export default function App() {
           : <MemoryGame data={theme} />
         }
       </Main>
-      <Footer
-        builder='L4ck (mrjgamboa)'
-        link='https://github.com/mrjgamboa'
-      />
+      {(theme === false) &&
+        <Footer
+          builder='L4ck (mrjgamboa)'
+          link='https://github.com/mrjgamboa'
+        />
+      }
     </div>
   );
 };

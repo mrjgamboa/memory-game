@@ -1,7 +1,7 @@
 import styles from './Card.module.css';
 
-export default function Card({obj, onCardClick}) {
-  const { id, name, src, alt, clicked } = obj;
+export default function Card({data, onCardClick}) {
+  const { id, name, src, alt, clicked } = data;
 
   return (
     <div 

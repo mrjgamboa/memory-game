@@ -6,7 +6,7 @@
 }
 
 .para {
-  max-width: 110px;
+  max-width: 120px;
   width: 100%;
   text-shadow: 1px 1px var(--color-secondary);
 }

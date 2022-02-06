@@ -2,7 +2,10 @@ import styles from './Scoreboard.module.css';
 
 export default function Scoreboard({ score, bestScore }) {
   return (
-    <nav className={styles.nav}>
+    <nav 
+      className={styles.nav}
+      ariaLabel='scoreboard'
+    >
       <p className={styles.para}>
         Score:
         <span className={styles.span}>{score}</span>
