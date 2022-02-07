@@ -3,8 +3,7 @@
   flex-direction: column;
   justify-content: flex-start;
   color: var(--color-tertiary);
-  height: 100%;
-  max-width: 1170px;
+  flex: 1;
   width: 100%;
   padding: 1rem;
 }

@@ -1,7 +1,6 @@
 .nav {
   color: var(--color-tertiary);
   font-size: 2em;
-  padding: 1rem 1.5rem;
   width: 100%;
 }
 
@@ -9,8 +8,9 @@
   max-width: 120px;
   width: 100%;
   text-shadow: 1px 1px var(--color-secondary);
+  display: flex;
 }
 
 .span {
-  float: right;
+  margin-left: auto;
 }

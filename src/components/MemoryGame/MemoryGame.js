@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from './MemoryGame.module.css';
+import GameNavigationBar from '../GameNavigationBar/GameNavigationBar';
 import Scoreboard from '../Scoreboard/Scoreboard';
 import Wrapper from '../Wrapper/Wrapper';
 import Card from '../Card/Card';
@@ -17,16 +18,23 @@ export default function MemoryGame({data}) {
       {/* create main nav, contains replay and back to home */}
       {(gameOver === false) &&
         <>
-          <Scoreboard 
-            score={score} 
-            bestScore={bestScore} 
-          />
+          <div className='navigation-container'>
+            <Wrapper>
+              <GameNavigationBar 
+                // onReplayClick
+                // onHomeClick
+              />
+              <Scoreboard 
+                bestScore={bestScore} 
+                score={score} 
+              />
+            </Wrapper>
+          </div>
           <Wrapper>
             <Card data={data[25]}/>
             <Card data={data[10]}/>
             <Card data={data[2]}/>
             <Card data={data[3]}/>
-            <Card data={data[4]}/>
           </Wrapper>
         </>
       }

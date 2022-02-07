@@ -4,6 +4,7 @@ import { animals } from './data/animals';
 import './styles/App.css';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
+import HowToPlay from './components/HowToPlay/HowToPlay';
 import ThemeSelector from './components/ThemeSelector/ThemeSelector';
 import MemoryGame from './components/MemoryGame/MemoryGame';
 import Footer from './components/Footer/Footer';
@@ -45,10 +46,19 @@ export default function App() {
       }
       <Main>
         {(theme === false)
-          ? <ThemeSelector 
-              data={themeInfo} 
-              onChildClick={themeDataSetter}
-            />
+          ? <>
+              <HowToPlay
+                list={[
+                  'Select any game theme.',
+                  "Don't click any card twice.",
+                  'To win the game, all cards must be clicked.',
+                ]}
+              />
+              <ThemeSelector 
+                data={themeInfo} 
+                onChildClick={themeDataSetter}
+              />
+            </>
           : <MemoryGame data={theme} />
         }
       </Main>

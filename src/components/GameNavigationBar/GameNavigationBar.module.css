@@ -1,0 +1,21 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.button {
+  border: 0;
+  background-color: var(--color-primary);
+  color: var(--color-tertiary);
+  font-size: 2em;
+  text-transform: capitalize;
+  text-shadow: 1px 1px var(--color-secondary);
+}
+
+.button:hover {
+  color: var(--color-secondary);
+  letter-spacing: 3px;
+  text-shadow: 1px 1px var(--color-tertiary);
+}

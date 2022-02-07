@@ -3,7 +3,7 @@ import styles from './ThemeSelector.module.css';
 export default function ThemeSelector({data, onChildClick}) {
   return (
     <div className={styles.div}>
-      <h2 className={styles.h2}>Select game theme:</h2>
+      <h2 className={styles.h2}>Game theme</h2>
       {data.map((item) => (
         <div 
           key={item.id} 

@@ -1,0 +1,26 @@
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+}
+
+.h2 {
+  color: var(--color-tertiary);
+  font-size: 1.75em;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 1px 1px var(--color-secondary);
+  margin: .25rem;
+}
+
+.ol {
+  max-width: 500px;
+  margin: .25rem;
+}
+
+.li:hover {
+  color: var(--color-tertiary);
+}
