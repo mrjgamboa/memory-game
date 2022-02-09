@@ -1,12 +1,12 @@
 import styles from './Card.module.css';
 
 export default function Card({data, onCardClick}) {
-  const { id, name, src, alt, clicked } = data;
+  const { id, name, src, alt } = data;
 
   return (
     <div 
       className={styles.card} 
-      key={id}
+      id={id}
       onClick={onCardClick}
     >
       <div>

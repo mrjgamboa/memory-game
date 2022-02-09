@@ -1,6 +1,6 @@
 import styles from './Scoreboard.module.css';
 
-export default function Scoreboard({ bestScore, score }) {
+export default function Scoreboard({ bestScore, score, max }) {
   return (
     <nav 
       className={styles.nav}
@@ -8,7 +8,7 @@ export default function Scoreboard({ bestScore, score }) {
     >
       <p className={styles.para}>
         Best Score:
-        <span className={styles.span}>{bestScore}</span>
+        <span className={styles.span}>{bestScore} / {max}</span>
       </p>
       <p className={styles.para}>
         Score:

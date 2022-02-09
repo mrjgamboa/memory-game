@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { sns } from './data/social-networking-services';
 import { animals } from './data/animals';
+import { randomInteger } from './utils';
 import './styles/App.css';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
@@ -9,12 +10,9 @@ import ThemeSelector from './components/ThemeSelector/ThemeSelector';
 import MemoryGame from './components/MemoryGame/MemoryGame';
 import Footer from './components/Footer/Footer';
 
-function randomInteger(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-};
-
 export default function App() {
-  const [theme, setTheme] = useState(false);
+  const [theme, setTheme] = useState([]);
+  console.log('theme: ', theme);
   
   const themeInfo = [
     {
@@ -33,25 +31,24 @@ export default function App() {
 
   const themeDataSetter = (id) => {
     if (id === 1) {
-      setTheme(sns);
+      setTheme([...sns]);
     } else if (id === 2){
-      setTheme(animals);
+      setTheme([...animals]);
     }
   };
   
   return (
     <div className='App'>
-      {(theme === false) &&
+      {(theme.length === 0) &&
         <Header title='Memory Game'/>
       }
       <Main>
-        {(theme === false)
+        {(theme.length === 0)
           ? <>
               <HowToPlay
                 list={[
                   'Select any game theme.',
                   "Don't click any card twice.",
-                  'To win the game, all cards must be clicked.',
                 ]}
               />
               <ThemeSelector 
@@ -59,10 +56,13 @@ export default function App() {
                 onChildClick={themeDataSetter}
               />
             </>
-          : <MemoryGame data={theme} />
+          : <MemoryGame 
+              data={theme} 
+              backToHome={() => {setTheme([])}}
+            />
         }
       </Main>
-      {(theme === false) &&
+      {(theme.length === 0) &&
         <Footer
           builder='L4ck (mrjgamboa)'
           link='https://github.com/mrjgamboa'

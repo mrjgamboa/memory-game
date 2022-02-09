@@ -3,3 +3,25 @@
   height: 100%;
   flex-direction: column;
 }
+
+.resultContainer {
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.h2 {
+  font-size: 2em;
+  width: 100%;
+  text-shadow: 1px 1px var(--color-tertiary);
+}
+
+.result {
+  font-size: 3em;
+  text-shadow: 1px 1px var(--color-tertiary);
+  text-transform: uppercase;
+}

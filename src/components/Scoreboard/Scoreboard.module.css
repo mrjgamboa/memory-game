@@ -1,11 +1,11 @@
 .nav {
   color: var(--color-tertiary);
-  font-size: 2em;
+  font-size: 1.5em;
   width: 100%;
 }
 
 .para {
-  max-width: 120px;
+  max-width: 140px;
   width: 100%;
   text-shadow: 1px 1px var(--color-secondary);
   display: flex;
