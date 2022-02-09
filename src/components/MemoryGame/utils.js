@@ -4,7 +4,7 @@ function randomInteger(min, max) {
 
 const isSameId = (obj1, obj2) => obj1.id === obj2.id;
 
-const isValidArray = (array) => {
+const isValidArrayFormat = (array) => {
   let clickableCardCount = 0;
   array.forEach((item) => {
     if ((item.clicked === false)) clickableCardCount += 1;
@@ -17,7 +17,7 @@ function generateTurnData(data, count=4) {
 
   while (array.length <= count) {
     if ((array.length === count)){
-      if (isValidArray(array)) break;
+      if (isValidArrayFormat(array)) break;
       array.length = 0;
     }
 

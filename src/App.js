@@ -12,7 +12,6 @@ import Footer from './components/Footer/Footer';
 
 export default function App() {
   const [theme, setTheme] = useState([]);
-  console.log('theme: ', theme);
   
   const themeInfo = [
     {

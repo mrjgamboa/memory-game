@@ -14,14 +14,9 @@ export default function MemoryGame({data, backToHome}) {
   const [gameOver, setGameOver] = useState(false);
   const [result, setResult] = useState(null);
 
-  console.log('data: ', data);
-  console.log('game data: ', gameData);
-  console.log('turn data: ', turnData);
-
   const isOver = (string, finalScore) => {
     setGameOver(true);
     setResult(string);
-    setScore(0);
     if (finalScore > bestScore) setBestScore(finalScore);
   };
 
@@ -38,7 +33,7 @@ export default function MemoryGame({data, backToHome}) {
       };
       setGameData([...dataCopy]);
       setScore(updatedScore);
-      setTurnData([...generateTurnData(gameData)]);
+      setTurnData([...generateTurnData(dataCopy)]);
       if (updatedScore > bestScore) setBestScore(updatedScore);
     }
   };
@@ -48,7 +43,6 @@ export default function MemoryGame({data, backToHome}) {
   };
 
   const onCardClick = (clicked, id, name) => {
-    console.log(clicked === true);
     return (clicked === true) 
       ? clickCardTwice(name)
       : clickCardOnce(id)
@@ -60,10 +54,6 @@ export default function MemoryGame({data, backToHome}) {
     setTurnData([...generateTurnData(data)]);
     setGameOver(false);
   };
-
-  // useEffect(() => {
-  //   setTurnData(generateTurnData(gameData));
-  // }, [score]);
 
   return (
     <div className={styles.gameDiv}>
@@ -103,3 +93,4 @@ export default function MemoryGame({data, backToHome}) {
     </div>
   );
 };
+console.log('add timer for useEffect?');
