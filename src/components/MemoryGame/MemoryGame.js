@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { generateTurnData } from './utils';
 import styles from './MemoryGame.module.css';
 import GameNavigationBar from '../GameNavigationBar/GameNavigationBar';
@@ -14,17 +14,19 @@ export default function MemoryGame({data, backToHome}) {
   const [gameOver, setGameOver] = useState(false);
   const [result, setResult] = useState(null);
 
+  // const prevScoreRef = useRef();
+
+  // useEffect(() => {
+  //   prevScoreRef.current = score;
+  //   console.log('prev: ', prevScoreRef.current);
+  // }, [score]);
+
   const isOver = (string, finalScore) => {
     setGameOver(true);
     setResult(string);
     if (finalScore > bestScore) setBestScore(finalScore);
   };
 
-  // let count = useStopwatch();
-  // console.log(count)
-  // if (count === 5) {
-  //   console.log('stop')
-  // }
 
   const clickCardOnce = (id) => {
     const updatedScore = score + 1;
