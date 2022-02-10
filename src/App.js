@@ -47,6 +47,7 @@ export default function App() {
               <HowToPlay
                 list={[
                   'Select any game theme.',
+                  "Don't ran out of time.",
                   "Don't click any card twice.",
                 ]}
               />

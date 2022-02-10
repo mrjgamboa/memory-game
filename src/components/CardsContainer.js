@@ -1,7 +1,7 @@
 import Wrapper from './Wrapper/Wrapper';
 import Card from './Card/Card';
 
-export default function CardsContainer({dataArray, onCardClick}) {
+export default function CardsContainer({dataArray, onChildClick}) {
   return (
     <Wrapper>
       {(dataArray.length === 4) &&
@@ -9,7 +9,7 @@ export default function CardsContainer({dataArray, onCardClick}) {
           <Card 
             key={item.id} 
             data={item} 
-            onCardClick={() => onCardClick(
+            onCardClick={() => onChildClick(
               item.clicked, 
               item.id,
               item.name,

@@ -54,158 +54,158 @@ export const sns = [
     "alt": "Flickr logo",
     "clicked": false
   },
-  // {
-  //   "id": "sns5",
-  //   "name": "Instagram",
-  //   "src": instagram,
-  //   "alt": "Instagram logo",
-  //   "clicked": false
-  // },
-  // {
-  //   "id": "sns6",
-  //   "name": "Line",
-  //   "src": line,
-  //   "alt": "Line logo",
-  //   "clicked": false
-  // },
-  // {
-  //   "id": "sns7",
-  //   "name": "LinkedIn",
-  //   "src": linkedin,
-  //   "alt": "LinkedIn logo",
-  //   "clicked": false
-  // },
-  // {
-  //   "id": "sns8",
-  //   "name": "Pinterest",
-  //   "src": pinterest,
-  //   "alt": "Pinterest logo",
-  //   "clicked": false
-  // },
-  // {
-  //   "id": "sns9",
-  //   "name": "QQ",
-  //   "src": qq,
-  //   "alt": "QQ logo",
-  //   "clicked": false
-  // },
-  // {
-  //   "id": "sns10",
-  //   "name": "Quora",
-  //   "src": quora,
-  //   "alt": "Quora logo",
-  //   "clicked": false
-  // },
-  // {
-  //   "id": "sns11",
-  //   "name": "Reddit",
-  //   "src": reddit,
-  //   "alt": "Reddit logo",
-  //   "clicked": false
-  // },
-  // {
-  //   "id": "sns12",
-  //   "name": "Skype",
-  //   "src": skype,
-  //   "alt": "Skype logo",
-  //   "clicked": false
-  // },
-  // {
-  //   "id": "sns13",
-  //   "name": "Slack",
-  //   "src": slack,
-  //   "alt": "Slack logo",
-  //   "clicked": false
-  // },
-  // {
-  //   "id": "sns14",
-  //   "name": "Snapchat",
-  //   "src": snapchat,
-  //   "alt": "Snapchat logo",
-  //   "clicked": false
-  // },
-  // {
-  //   "id": "sns15",
-  //   "name": "Stack Overflow",
-  //   "src": stackOverflow,
-  //   "alt": "Stack Overflow logo",
-  //   "clicked": false
-  // },
-  // {
-  //   "id": "sns16",
-  //   "name": "Telegram",
-  //   "src": telegram,
-  //   "alt": "Telegram logo",
-  //   "clicked": false
-  // },
-  // {
-  //   "id": "sns17",
-  //   "name": "TikTok",
-  //   "src": tiktok,
-  //   "alt": "TikTok logo",
-  //   "clicked": false
-  // },
-  // {
-  //   "id": "sns18",
-  //   "name": "Tinder",
-  //   "src": tinder,
-  //   "alt": "Tinder logo",
-  //   "clicked": false
-  // },
-  // {
-  //   "id": "sns19",
-  //   "name": "Tumblr",
-  //   "src": tumblr,
-  //   "alt": "Tumblr logo",
-  //   "clicked": false
-  // },
-  // {
-  //   "id": "sns20",
-  //   "name": "Twitch",
-  //   "src": twitch,
-  //   "alt": "Twitch logo",
-  //   "clicked": false
-  // },
-  // {
-  //   "id": "sns21",
-  //   "name": "Twitter",
-  //   "src": twitter,
-  //   "alt": "Twitter logo",
-  //   "clicked": false
-  // },
-  // {
-  //   "id": "sns22",
-  //   "name": "Viber",
-  //   "src": viber,
-  //   "alt": "Viber logo",
-  //   "clicked": false
-  // },
-  // {
-  //   "id": "sns23",
-  //   "name": "WeChat",
-  //   "src": wechat,
-  //   "alt": "WeChat logo",
-  //   "clicked": false
-  // },
-  // {
-  //   "id": "sns24",
-  //   "name": "Weibo",
-  //   "src": weibo,
-  //   "alt": "Weibo logo",
-  //   "clicked": false
-  // },
-  // {
-  //   "id": "sns25",
-  //   "name": "WhatsApp",
-  //   "src": whatsapp,
-  //   "alt": "WhatsApp logo",
-  //   "clicked": false
-  // },
-  // {
-  //   "id": "sns26",
-  //   "name": "Youtube",
-  //   "src": youtube,
-  //   "alt": "Youtube logo",
-  //   "clicked": false
-  // },
+  {
+    "id": "sns5",
+    "name": "Instagram",
+    "src": instagram,
+    "alt": "Instagram logo",
+    "clicked": false
+  },
+  {
+    "id": "sns6",
+    "name": "Line",
+    "src": line,
+    "alt": "Line logo",
+    "clicked": false
+  },
+  {
+    "id": "sns7",
+    "name": "LinkedIn",
+    "src": linkedin,
+    "alt": "LinkedIn logo",
+    "clicked": false
+  },
+  {
+    "id": "sns8",
+    "name": "Pinterest",
+    "src": pinterest,
+    "alt": "Pinterest logo",
+    "clicked": false
+  },
+  {
+    "id": "sns9",
+    "name": "QQ",
+    "src": qq,
+    "alt": "QQ logo",
+    "clicked": false
+  },
+  {
+    "id": "sns10",
+    "name": "Quora",
+    "src": quora,
+    "alt": "Quora logo",
+    "clicked": false
+  },
+  {
+    "id": "sns11",
+    "name": "Reddit",
+    "src": reddit,
+    "alt": "Reddit logo",
+    "clicked": false
+  },
+  {
+    "id": "sns12",
+    "name": "Skype",
+    "src": skype,
+    "alt": "Skype logo",
+    "clicked": false
+  },
+  {
+    "id": "sns13",
+    "name": "Slack",
+    "src": slack,
+    "alt": "Slack logo",
+    "clicked": false
+  },
+  {
+    "id": "sns14",
+    "name": "Snapchat",
+    "src": snapchat,
+    "alt": "Snapchat logo",
+    "clicked": false
+  },
+  {
+    "id": "sns15",
+    "name": "Stack Overflow",
+    "src": stackOverflow,
+    "alt": "Stack Overflow logo",
+    "clicked": false
+  },
+  {
+    "id": "sns16",
+    "name": "Telegram",
+    "src": telegram,
+    "alt": "Telegram logo",
+    "clicked": false
+  },
+  {
+    "id": "sns17",
+    "name": "TikTok",
+    "src": tiktok,
+    "alt": "TikTok logo",
+    "clicked": false
+  },
+  {
+    "id": "sns18",
+    "name": "Tinder",
+    "src": tinder,
+    "alt": "Tinder logo",
+    "clicked": false
+  },
+  {
+    "id": "sns19",
+    "name": "Tumblr",
+    "src": tumblr,
+    "alt": "Tumblr logo",
+    "clicked": false
+  },
+  {
+    "id": "sns20",
+    "name": "Twitch",
+    "src": twitch,
+    "alt": "Twitch logo",
+    "clicked": false
+  },
+  {
+    "id": "sns21",
+    "name": "Twitter",
+    "src": twitter,
+    "alt": "Twitter logo",
+    "clicked": false
+  },
+  {
+    "id": "sns22",
+    "name": "Viber",
+    "src": viber,
+    "alt": "Viber logo",
+    "clicked": false
+  },
+  {
+    "id": "sns23",
+    "name": "WeChat",
+    "src": wechat,
+    "alt": "WeChat logo",
+    "clicked": false
+  },
+  {
+    "id": "sns24",
+    "name": "Weibo",
+    "src": weibo,
+    "alt": "Weibo logo",
+    "clicked": false
+  },
+  {
+    "id": "sns25",
+    "name": "WhatsApp",
+    "src": whatsapp,
+    "alt": "WhatsApp logo",
+    "clicked": false
+  },
+  {
+    "id": "sns26",
+    "name": "Youtube",
+    "src": youtube,
+    "alt": "Youtube logo",
+    "clicked": false
+  },
 ];

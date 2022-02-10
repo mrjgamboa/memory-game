@@ -1,10 +1,11 @@
-import { useEffect, useState, useRef } from 'react';
+import { useState } from 'react';
 import { generateTurnData } from './utils';
 import styles from './MemoryGame.module.css';
 import GameNavigationBar from '../GameNavigationBar/GameNavigationBar';
 import Scoreboard from '../Scoreboard/Scoreboard';
 import Wrapper from '../Wrapper/Wrapper';
 import CardsContainer from '../CardsContainer';
+import { Timer } from '../Timer';
 
 export default function MemoryGame({data, backToHome}) {
   const [gameData, setGameData] = useState([...data]);
@@ -13,20 +14,13 @@ export default function MemoryGame({data, backToHome}) {
   const [bestScore, setBestScore] = useState(0);
   const [gameOver, setGameOver] = useState(false);
   const [result, setResult] = useState(null);
-
-  // const prevScoreRef = useRef();
-
-  // useEffect(() => {
-  //   prevScoreRef.current = score;
-  //   console.log('prev: ', prevScoreRef.current);
-  // }, [score]);
+  const [uniqueData, setUniqueData] = useState(Date.now());
 
   const isOver = (string, finalScore) => {
     setGameOver(true);
     setResult(string);
     if (finalScore > bestScore) setBestScore(finalScore);
   };
-
 
   const clickCardOnce = (id) => {
     const updatedScore = score + 1;
@@ -42,6 +36,7 @@ export default function MemoryGame({data, backToHome}) {
       setGameData([...dataCopy]);
       setScore(updatedScore);
       setTurnData([...generateTurnData(dataCopy)]);
+      setUniqueData(Date.now());
       if (updatedScore > bestScore) setBestScore(updatedScore);
     }
   };
@@ -79,11 +74,18 @@ export default function MemoryGame({data, backToHome}) {
                   score={score}
                   max={gameData.length}
                 />
+                <Timer
+                  sec={15}
+                  callBack={() => isOver(
+                    'You ran out of time!', score
+                  )}
+                  uniqueResetData={uniqueData}
+                />
               </Wrapper>
             </div>
             <CardsContainer 
               dataArray={turnData}
-              onCardClick={onCardClick}
+              onChildClick={onCardClick}
             />
           </>
         : 
