@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { generateTurnData } from './utils';
 import styles from './MemoryGame.module.css';
 import GameNavigationBar from '../GameNavigationBar/GameNavigationBar';
@@ -19,6 +19,12 @@ export default function MemoryGame({data, backToHome}) {
     setResult(string);
     if (finalScore > bestScore) setBestScore(finalScore);
   };
+
+  // let count = useStopwatch();
+  // console.log(count)
+  // if (count === 5) {
+  //   console.log('stop')
+  // }
 
   const clickCardOnce = (id) => {
     const updatedScore = score + 1;
@@ -93,4 +99,3 @@ export default function MemoryGame({data, backToHome}) {
     </div>
   );
 };
-console.log('add timer for useEffect?');
